@@ -1,0 +1,268 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Vladyslav Demianets — Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body class="page">
+  <!-- Header -->
+  <header class="header">
+    <div class="container header__inner">
+      <a class="logo" href="#top">VD.</a>
+
+      <input class="header__toggle" type="checkbox" id="menu" aria-label="Open menu">
+      <label class="burger" for="menu" aria-label="Menu">
+        <span class="burger__line"></span>
+        <span class="burger__line"></span>
+        <span class="burger__line"></span>
+      </label>
+
+      <nav class="nav header__nav">
+        <a class="nav__link" href="#about">About</a>
+        <a class="nav__link" href="#services">Services</a>
+        <a class="nav__link" href="#projects">Projects</a>
+        <a class="nav__link" href="#testimonials">Testimonials</a>
+        <a class="nav__link" href="#contact">Contact</a>
+      </nav>
+
+      <a class="btn btn--primary header__cta" href="#contact">Let’s talk</a>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container hero__inner">
+        <div class="hero__content">
+          <p class="pill">👋 Hello, I’m</p>
+          <h1 class="hero__title">Vladyslav Demianets</h1>
+          <p class="hero__subtitle">
+            4th-year student at the State University of Information and Communication Technologies,
+            majoring in Computer Engineering.
+          </p>
+
+          <div class="hero__actions">
+            <a class="btn btn--primary" href="#projects">View projects</a>
+            <a class="btn btn--ghost" href="#about">About me</a>
+          </div>
+
+          <div class="hero__meta">
+            <div class="chip">📍 Ukraine</div>
+            <div class="chip">💻 Frontend / Web</div>
+            <div class="chip">⚡ HTML • CSS • Responsive</div>
+          </div>
+        </div>
+
+        <div class="hero__card">
+          <div class="avatar">
+            <!-- ЗАМЕНИ НА СВОЁ ФОТО:
+                 1) положи файл рядом, например img/me.jpg
+                 2) поменяй src -->
+            <img class="avatar__img"
+                 src="https://images.unsplash.com/photo-1502685104226-ee32379fefbe?w=600&auto=format&fit=crop&q=60"
+                 alt="Your photo">
+          </div>
+
+          <div class="hero__card-body">
+            <div class="hero__card-line">
+              <span class="tag">Open to work</span>
+              <span class="tag tag--soft">Junior</span>
+            </div>
+            <p class="hero__card-text">
+              I build clean, responsive interfaces and practice modern layout techniques (Flexbox, Grid, BEM).
+            </p>
+            <div class="social">
+              <a class="social__link" href="https://github.com/Umiyi" target="_blank" rel="noreferrer">GitHub</a>
+              <a class="social__link" href="#contact">Email</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Stats -->
+    <section class="stats" id="about">
+      <div class="container stats__inner">
+        <div class="stats__text">
+          <h2 class="section-title">About</h2>
+          <p class="section-subtitle">
+            I’m focused on building neat UI layouts, improving responsiveness, and making projects structured and readable.
+          </p>
+        </div>
+
+        <div class="stats__grid">
+          <div class="stat">
+            <div class="stat__num">4</div>
+            <div class="stat__label">Year student</div>
+          </div>
+          <div class="stat">
+            <div class="stat__num">5+</div>
+            <div class="stat__label">Labs / Projects</div>
+          </div>
+          <div class="stat">
+            <div class="stat__num">100%</div>
+            <div class="stat__label">Responsive focus</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section class="section" id="services">
+      <div class="container">
+        <div class="section__head">
+          <h2 class="section-title">Services</h2>
+          <p class="section-subtitle">What I can do for your website.</p>
+        </div>
+
+        <div class="grid grid--3">
+          <article class="card">
+            <h3 class="card__title">UI Layout</h3>
+            <p class="card__text">Clean and structured pages using Flexbox and CSS Grid.</p>
+          </article>
+          <article class="card">
+            <h3 class="card__title">Responsive Design</h3>
+            <p class="card__text">Mobile-friendly layout with breakpoints and fluid spacing.</p>
+          </article>
+          <article class="card">
+            <h3 class="card__title">BEM Structure</h3>
+            <p class="card__text">Readable naming and scalable component-based CSS.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="section section--alt" id="projects">
+      <div class="container">
+        <div class="section__head">
+          <h2 class="section-title">Projects</h2>
+          <p class="section-subtitle">My laboratory works (GitHub links).</p>
+        </div>
+
+        <div class="grid grid--2">
+          <article class="project">
+            <div class="project__top">
+              <h3 class="project__title">
+                <a class="project__link" href="https://github.com/Umiyi/html-lab-1" target="_blank" rel="noreferrer">
+                  Project 1 — Lab 1
+                </a>
+              </h3>
+              <span class="badge">HTML</span>
+            </div>
+            <p class="project__text">Basic HTML structure and first layout steps.</p>
+            <a class="project__cta" href="https://github.com/Umiyi/html-lab-1" target="_blank" rel="noreferrer">Open →</a>
+          </article>
+
+          <article class="project">
+            <div class="project__top">
+              <h3 class="project__title">
+                <a class="project__link" href="https://github.com/Umiyi/html-lab-3" target="_blank" rel="noreferrer">
+                  Project 2 — Lab 3
+                </a>
+              </h3>
+              <span class="badge">Flexbox</span>
+            </div>
+            <p class="project__text">YouTube homepage clone using Flexbox.</p>
+            <a class="project__cta" href="https://github.com/Umiyi/html-lab-3" target="_blank" rel="noreferrer">Open →</a>
+          </article>
+
+          <article class="project">
+            <div class="project__top">
+              <h3 class="project__title">
+                <a class="project__link" href="https://github.com/Umiyi/html-lab-4" target="_blank" rel="noreferrer">
+                  Project 3 — Lab 4
+                </a>
+              </h3>
+              <span class="badge">Grid</span>
+            </div>
+            <p class="project__text">Weekly planner page using CSS Grid.</p>
+            <a class="project__cta" href="https://github.com/Umiyi/html-lab-4" target="_blank" rel="noreferrer">Open →</a>
+          </article>
+
+          <article class="project">
+            <div class="project__top">
+              <h3 class="project__title">
+                <a class="project__link" href="https://github.com/Umiyi/html-lab-5" target="_blank" rel="noreferrer">
+                  Project 4 — Lab 5
+                </a>
+              </h3>
+              <span class="badge">Portfolio</span>
+            </div>
+            <p class="project__text">Portfolio home page based on a Figma template.</p>
+            <a class="project__cta" href="https://github.com/Umiyi/html-lab-5" target="_blank" rel="noreferrer">Open →</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="section" id="testimonials">
+      <div class="container">
+        <div class="section__head">
+          <h2 class="section-title">Testimonials</h2>
+          <p class="section-subtitle">Simple UI block for the template style.</p>
+        </div>
+
+        <div class="grid grid--3">
+          <article class="card card--quote">
+            <p class="quote">“Clean layout and nice spacing. Looks professional.”</p>
+            <p class="quote__name">— Reviewer</p>
+          </article>
+          <article class="card card--quote">
+            <p class="quote">“Mobile version works great, easy to navigate.”</p>
+            <p class="quote__name">— Reviewer</p>
+          </article>
+          <article class="card card--quote">
+            <p class="quote">“Good structure and readable CSS.”</p>
+            <p class="quote__name">— Reviewer</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section section--alt" id="contact">
+      <div class="container">
+        <div class="section__head">
+          <h2 class="section-title">Contact</h2>
+          <p class="section-subtitle">Send a message (UI only).</p>
+        </div>
+
+        <form class="form" action="#" method="post">
+          <label class="field">
+            <span class="field__label">Name</span>
+            <input class="field__input" type="text" placeholder="Your name" />
+          </label>
+
+          <label class="field">
+            <span class="field__label">Email</span>
+            <input class="field__input" type="email" placeholder="name@mail.com" />
+          </label>
+
+          <label class="field field--full">
+            <span class="field__label">Message</span>
+            <textarea class="field__input field__input--area" placeholder="Write something..."></textarea>
+          </label>
+
+          <button class="btn btn--primary" type="submit">Send</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <span class="footer__text">© 2025 Vladyslav Demianets</span>
+      <a class="footer__link" href="#top">Back to top ↑</a>
+    </div>
+  </footer>
+</body>
+</html>
